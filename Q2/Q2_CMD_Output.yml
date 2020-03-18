@@ -1,0 +1,156 @@
+**********************************************************************************************************************************
+Checking for the input file path..
+Checking for the input file path...DONE
+**********************************************************************************************************************************
+Full path of your data set is : /Users/debnsuma/IIT_J_PG/code/ML/Q2/iris.data
+**********************************************************************************************************************************
+Loading the data set...
+Loading the data set...DONE
+**********************************************************************************************************************************
+Splitting the data set into training and test...
+Splitting the data set into training and test...DONE
+**********************************************************************************************************************************
+Total Data Points: 150
+No. of Data Points(Training): 120
+No. of Data Points(Testing): 30
+**********************************************************************************************************************************
+1. DECISION TREE CLASSIFIER
+**********************************************************************************************************************************
+Hyper Parameters used:
+ccp_alpha : 0.0
+class_weight : None
+criterion : gini
+max_depth : None
+max_features : None
+max_leaf_nodes : None
+min_impurity_decrease : 0.0
+min_impurity_split : None
+min_samples_leaf : 1
+min_samples_split : 2
+min_weight_fraction_leaf : 0.0
+presort : deprecated
+random_state : None
+splitter : best
+**********************************************************************************************************************************
+Performing the prediction on the test data...
+Performing the prediction on the test data...DONE
+**********************************************************************************************************************************
+Classification Report
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         9
+           1       0.80      1.00      0.89         8
+           2       1.00      0.85      0.92        13
+
+    accuracy                           0.93        30
+   macro avg       0.93      0.95      0.94        30
+weighted avg       0.95      0.93      0.93        30
+
+**********************************************************************************************************************************
+Accuracy : 0.9333333333333333
+**********************************************************************************************************************************
+Confusion Matrix : 
+ [[ 9  0  0]
+ [ 0  8  0]
+ [ 0  2 11]]
+**********************************************************************************************************************************
+Precision for class 0 : 1.0
+Precision for class 1 : 0.8
+Precision for class 2 : 1.0
+**********************************************************************************************************************************
+Sensitivity for class 0 : 1.0
+Sensitivity for class 1 : 1.0
+Sensitivity for class 2 : 0.8461538461538461
+**********************************************************************************************************************************
+Specificity for class 0 : 1.0
+Specificity for class 1 : 0.9090909090909091
+Specificity for class 2 : 1.0
+**********************************************************************************************************************************
+ROC Curve for Decision Tree is saved at : /Users/debnsuma/IIT_J_PG/code/ML/Q2/ROC_CURVE_DT.png
+**********************************************************************************************************************************
+2. RANDOM FOREST CLASSIFIER
+**********************************************************************************************************************************
+Hyper Parameters used:
+bootstrap : True
+ccp_alpha : 0.0
+class_weight : None
+criterion : gini
+max_depth : None
+max_features : auto
+max_leaf_nodes : None
+max_samples : None
+min_impurity_decrease : 0.0
+min_impurity_split : None
+min_samples_leaf : 1
+min_samples_split : 2
+min_weight_fraction_leaf : 0.0
+n_estimators : 10
+n_jobs : None
+oob_score : False
+random_state : None
+verbose : 0
+warm_start : False
+**********************************************************************************************************************************
+Performing the prediction on the test data...
+Performing the prediction on the test data...DONE
+**********************************************************************************************************************************
+Classification Report
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         9
+           1       0.89      1.00      0.94         8
+           2       1.00      0.92      0.96        13
+
+    accuracy                           0.97        30
+   macro avg       0.96      0.97      0.97        30
+weighted avg       0.97      0.97      0.97        30
+
+**********************************************************************************************************************************
+Accuracy : 0.9666666666666667
+**********************************************************************************************************************************
+Confusion Matrix : 
+ [[ 9  0  0]
+ [ 0  8  0]
+ [ 0  1 12]]
+**********************************************************************************************************************************
+Precision for class 0 : 1.0
+Precision for class 1 : 0.8888888888888888
+Precision for class 2 : 1.0
+**********************************************************************************************************************************
+Sensitivity for class 0 : 1.0
+Sensitivity for class 1 : 1.0
+Sensitivity for class 2 : 0.9230769230769231
+**********************************************************************************************************************************
+Specificity for class 0 : 1.0
+Specificity for class 1 : 0.9545454545454546
+Specificity for class 2 : 1.0
+**********************************************************************************************************************************
+ROC Curve for Random Forest is saved at : /Users/debnsuma/IIT_J_PG/code/ML/Q2/ROC_CURVE_RF.png
+**********************************************************************************************************************************
+ROC Curve between DT and RF for class label 0 is saved at : /Users/debnsuma/IIT_J_PG/code/ML/Q2/ROC_DT_vd_RF_class_label_0.png
+**********************************************************************************************************************************
+ROC Curve between DT and RF for class label 1 is saved at : /Users/debnsuma/IIT_J_PG/code/ML/Q2/ROC_DT_vd_RF_class_label_1.png
+**********************************************************************************************************************************
+ROC Curve between DT and RF for class label 2 is saved at : /Users/debnsuma/IIT_J_PG/code/ML/Q2/ROC_DT_vd_RF_class_label_2.png
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+Visual Graph of the Decision Tree is saved at : /Users/debnsuma/IIT_J_PG/code/ML/Q2/DT_Graph.pdf
+**********************************************************************************************************************************
+ROC AUC Scores for Decision Tree
+One-vs-One ROC AUC scores:
+0.9615 (macro),
+0.9590 (weighted by prevalence)
+One-vs-Rest ROC AUC scores:
+0.9592 (macro),
+0.9545 (weighted by prevalence)
+**********************************************************************************************************************************
+ROC AUC Scores for Random Forest
+One-vs-One ROC AUC scores:
+1.0000 (macro),
+1.0000 (weighted by prevalence)
+One-vs-Rest ROC AUC scores:
+1.0000 (macro),
+1.0000 (weighted by prevalence)
+**********************************************************************************************************************************
+Check all the graphs in the present working directory
+**********************************************************************************************************************************
